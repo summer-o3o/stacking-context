@@ -51,8 +51,8 @@ z-index 는 많은 사람들이 알고 있지만 많은 사람들이 정확하�
 
 
 ##### [정답]<br>
-빨간```<span>```의 부모인 ```<div>```에 opacity를 1보다 작게 주는 것이다.<br>
-<img width="207" alt="스크린샷 2023-01-06 오후 10 03 14" src="https://user-images.githubusercontent.com/89458455/211017660-820ccd3c-b1a6-4b26-b6c1-819eaffe3dea.png"><br>
+빨간```<span>```의 부모인 ```<div>```에 opacity를 1보다 작게 주는 것이다.<br><br>
+<img width="207" alt="스크린샷 2023-01-06 오후 10 03 14" src="https://user-images.githubusercontent.com/89458455/211017660-820ccd3c-b1a6-4b26-b6c1-819eaffe3dea.png"><br><br>
 링크 : [예시보기](https://summer-o3o.github.io/stacking-context/z-index_test1_1.html)<br>
 
 ```
