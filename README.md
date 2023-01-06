@@ -37,7 +37,7 @@ z-index 는 많은 사람들이 알고 있지만 많은 사람들이 정확하�
 ```
 
 ##### [문제 1]<br>
-링크 : [예시보기](https://summer-o3o.github.io/stacking-context/z-index_test1.html){: target="_blank"}<br>
+[예시보기](https://summer-o3o.github.io/stacking-context/z-index_test1.html){: target="_blank"}<br>
 빨간 ```<span>```을 아래 규칙을 깨지 않으면서 파랑과 초록 ```<span>``` 요소 밑으로 가게 하시오.<br>
 * HTML 마크업을 어떤 식으로든 건드려선 안 된다.<br>
 * 어떤 요소에도 z-index를 추가하거나 변경해선 안 된다.<br>
@@ -50,7 +50,7 @@ z-index 는 많은 사람들이 알고 있지만 많은 사람들이 정확하�
 
 ##### [정답]<br>
 빨간```<span>```의 부모인 ```<div>```에 opacity를 1보다 작게 주는 것이다.<br>
-링크 : [예시보기](https://summer-o3o.github.io/stacking-context/z-index_test1_1.html){: target="_blank"}<br>
+[예시보기](https://summer-o3o.github.io/stacking-context/z-index_test1_1.html){: target="_blank"}<br>
 
 ```
 div:first-child {
