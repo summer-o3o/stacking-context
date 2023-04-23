@@ -4,98 +4,85 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>z-index 적용</title>
+    <title>z-index가 없는 경우의 쌓임</title>
     <style>
+      strong {
+        font-family: sans-serif;
+      }
+
       div {
-        opacity: 0.7;
-        font: 12px Arial;
-      }
-
-      span.bold {
-        font-weight: bold;
-      }
-
-      #normdiv {
-        z-index: 8;
-        height: 70px;
-        border: 1px dashed #999966;
-        background-color: #ffffcc;
-        margin: 0px 50px 0px 50px;
+        padding: 10px;
+        border: 1px dashed;
         text-align: center;
       }
 
-      #reldiv1 {
-        z-index: 3;
-        height: 100px;
-        position: relative;
-        top: 30px;
-        border: 1px dashed #669966;
-        background-color: #ccffcc;
-        margin: 0px 50px 0px 50px;
-        text-align: center;
+      .static {
+        position: static;
+        height: 80px;
+        background-color: #ffc;
+        border-color: #996;
       }
 
-      #reldiv2 {
-        z-index: 2;
-        height: 100px;
-        position: relative;
-        top: 15px;
-        left: 20px;
-        border: 1px dashed #669966;
-        background-color: #ccffcc;
-        margin: 0px 50px 0px 50px;
-        text-align: center;
-      }
-
-      #absdiv1 {
-        z-index: 5;
+      .absolute {
         position: absolute;
         width: 150px;
         height: 350px;
+        background-color: #fdd;
+        border-color: #900;
+        opacity: 0.7;
+      }
+
+      .relative {
+        position: relative;
+        height: 80px;
+        background-color: #cfc;
+        border-color: #696;
+        opacity: 0.7;
+      }
+
+      #abs1 {
         top: 10px;
         left: 10px;
-        border: 1px dashed #990000;
-        background-color: #ffdddd;
-        text-align: center;
       }
 
-      #absdiv2 {
-        z-index: 1;
-        position: absolute;
-        width: 150px;
-        height: 350px;
+      #rel1 {
+        top: 30px;
+        margin: 0px 50px 0px 50px;
+      }
+
+      #rel2 {
+        top: 15px;
+        left: 20px;
+        margin: 0px 50px 0px 50px;
+      }
+
+      #abs2 {
         top: 10px;
         right: 10px;
-        border: 1px dashed #990000;
-        background-color: #ffdddd;
-        text-align: center;
+      }
+
+      #sta1 {
+        background-color: #ffc;
+        margin: 0px 50px 0px 50px;
+        opacity: 0.99;
       }
     </style>
   </head>
   <body>
-    <div id="absdiv1">
-      <br /><span class="bold">DIV #1</span> <br />position: absolute;
-      <br />z-index: 5;
+    <div id="abs1" class="absolute">
+      <strong>DIV #1</strong><br />position: absolute;
     </div>
-
-    <div id="reldiv1">
-      <br /><span class="bold">DIV #2</span> <br />position: relative;
-      <br />z-index: 3;
+    <div id="rel1" class="relative">
+      <strong>DIV #2</strong><br />position: relative;
     </div>
-
-    <div id="reldiv2">
-      <br /><span class="bold">DIV #3</span> <br />position: relative;
-      <br />z-index: 2;
+    <div id="rel2" class="relative">
+      <strong>DIV #3</strong><br />position: relative;
     </div>
-
-    <div id="absdiv2">
-      <br /><span class="bold">DIV #4</span> <br />position: absolute;
-      <br />z-index: 1;
+    <div id="sta1" class="static">
+      <strong>DIV #4</strong><br />position: static; opacity:.99
     </div>
-
-    <div id="normdiv">
-      <br /><span class="bold">DIV #5</span> <br />no positioning <br />z-index:
-      8;
+    <div id="abs2" class="absolute">
+      <strong>DIV #5</strong><br />position: absolute;
     </div>
   </body>
 </html>
