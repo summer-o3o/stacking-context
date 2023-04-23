@@ -1,25 +1,48 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-<meta charset="utf-8">
-<title>z-index_test1</title>
-<style>
-.red, .green, .blue {position:absolute;width:100px;color:white;line-height:100px;text-align:center}
-.red {z-index:1;top:20px;left:20px;background:red}
-.green {top:60px;left:60px;background:green}
-.blue {top:100px;left:100px;background:blue}
-div:first-child{opacity:0.99}
-</style>
-</head>
-<body>
-<div>
-  <span class="red">Red</span>
-</div>
-<div>
-  <span class="green">Green</span>
-</div>
-<div>
-  <span class="blue">Blue</span>
-</div>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>z-index_test1</title>
+    <style>
+      .red,
+      .green,
+      .blue {
+        position: absolute;
+        width: 100px;
+        color: white;
+        line-height: 100px;
+        text-align: center;
+      }
+      .red {
+        z-index: 1;
+        top: 20px;
+        left: 20px;
+        background: red;
+      }
+      .green {
+        top: 60px;
+        left: 60px;
+        background: green;
+      }
+      .blue {
+        top: 100px;
+        left: 100px;
+        background: blue;
+      }
+      div:first-child {
+        opacity: 0.99;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <span class="red">Red</span>
+    </div>
+    <div>
+      <span class="green">Green</span>
+    </div>
+    <div>
+      <span class="blue">Blue</span>
+    </div>
+  </body>
 </html>
